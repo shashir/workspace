@@ -110,7 +110,7 @@ if [ $? -eq 0 ]; then \
 export MAVEN_OPTS="-XX:PermSize=2G -Xmx2G"
 
 #source bento
-source ~/lib/kiji-bento-fugu/bin/kiji-env.sh > /dev/null
+source ~/opt/kiji-bento/bin/kiji-env.sh > /dev/null
 
 # alias vpn
 alias wibivpn='sudo openvpn --script-security 3 system  --config ~/bin/client.ovpn'
@@ -164,9 +164,9 @@ alias post='post-review -o --branch=master --guess-summary --guess-description -
 alias postr='post-review -o -r'
 
 #IntelliJ alias
-alias ij='~/lib/idea/bin/idea.sh &'
+alias ij='~/bin/idea &'
 #PyCharm alias
-alias pc='~/lib/pycharm-community/bin/pycharm.sh &'
+alias pc='~/bin/pycharm &'
 
 #Maven aliases
 alias mcv='mvn clean verify'
@@ -198,3 +198,9 @@ alias dart='~/bin/dart/DartEditor &'
 
 #general aliases
 alias c='clear'
+
+#my scripts
+export PATH=$PATH:$HOME/bin/
+
+#Java
+export JAVA_HOME=/usr/lib/jvm/java-7-oracle/jre
