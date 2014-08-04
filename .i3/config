@@ -156,3 +156,8 @@ bar {
 
 # Start applets and other desktop applications.
 exec --no-startup-id nm-applet # NetworkManager
+
+# Workspace configuration.
+workspace 1 output VGA1
+workspace 2 output LVDS1
+
