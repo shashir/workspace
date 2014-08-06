@@ -190,6 +190,12 @@ alias krs='kiji-review submit && git checkout master && git merge --ff-only orig
 #wibi devtools scripts
 export PATH=$PATH:$HOME/src/wibi/devtools/bin/
 
+#pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+
 #alias arduino
 alias arduino='sudo ~/bin/arduino-1.5.2/arduino'
 
