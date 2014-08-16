@@ -1,0 +1,29 @@
+# Ignore all non-whitelisted files.
+*
+
+# Whitelist
+!.gitignore
+
+# bash
+!.bashrc_addendum
+
+# scripts
+!bin/
+!bin/exit_menu.sh
+!bin/low_battery_warning.sh
+!bin/wibi0.sh
+!bin/wibi1.sh
+
+# i3 window manager config
+!.i3/
+!.i3/config
+
+# src
+!src/
+!src/global_gitignore
+
+# maven settings
+!.m2/
+!.m2/settings.xml
+
+
