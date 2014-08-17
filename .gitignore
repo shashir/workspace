@@ -23,7 +23,7 @@
 !src/global_gitignore
 
 # maven settings
-!.m2/
-!.m2/settings.xml
+#!.m2/
+#!.m2/settings.xml
 
 
