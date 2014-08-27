@@ -187,9 +187,6 @@ alias kre='kiji-review export'
 alias krep='kiji-review export --publish'
 alias krs='kiji-review submit && git checkout master && git merge --ff-only origin/master'
 
-#wibi devtools scripts
-export PATH=$PATH:$HOME/src/wibi/devtools/bin/
-
 #pyenv
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
