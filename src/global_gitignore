@@ -17,6 +17,7 @@ nbactions.xml
 .ensime
 .idea/
 *.iml
+output/
 
 # Build and run artifacts.
 target/
