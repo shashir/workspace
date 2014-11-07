@@ -24,6 +24,7 @@ target/
 build/
 logs/
 pids/
+temp/
 
 # Other
 .cache
