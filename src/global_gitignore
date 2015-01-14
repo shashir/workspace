@@ -25,6 +25,7 @@ build/
 logs/
 pids/
 temp/
+__pycache__/
 
 # Other
 .cache
