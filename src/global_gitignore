@@ -18,6 +18,7 @@ nbactions.xml
 .idea/
 *.iml
 output/
+out/
 
 # Build and run artifacts.
 target/
