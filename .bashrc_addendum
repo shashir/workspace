@@ -109,13 +109,6 @@ if [ $? -eq 0 ]; then \
 # increase ram allocated to Maven
 export MAVEN_OPTS="-XX:PermSize=2G -Xmx2G"
 
-#source bento
-source ~/opt/kiji-bento/bin/kiji-env.sh > /dev/null
-
-# alias vpn
-alias wibivpn='sudo openvpn --script-security 3 system  --config ~/bin/client.ovpn'
-
-#!/bin/bash
 function vifi {
   vim $(find -name $1)
 }
@@ -212,5 +205,9 @@ export JAVA_HOME=/usr/lib/jvm/java-7-oracle/jre
 docker-enter() {
   pid=$(docker inspect --format {{.State.Pid}} $1)
   sudo ~/bin/nsenter --target "$pid" --mount --uts --ipc --net --pid
+}
+
+killall() {
+  ps aux | grep $1 | awk '{print $2}' | xargs kill -9  
 }
 
